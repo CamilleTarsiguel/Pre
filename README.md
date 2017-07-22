@@ -9,7 +9,13 @@ May - July 2017
 
 Author : Camille Tarsiguel, camille.tarsiguel@ensta-paristech.fr
 
-
+Citation : I used and modified the code from the following articles
+- DC Tracking :
+- MDP Tracking : https://github.com/yuxng/MDP_Tracking
+- ROT Tracking :
+- Evaluation : MOT challenge devkit
+- ACF detector and Caltech Pedestrian Dataset + Toolbox : P. Dollar
+- DPM detector :
 
 This code was tested on Mac OSX 10.12.5 and Matlab R2017a.
 
