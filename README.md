@@ -29,6 +29,7 @@ FOLDER STRUCTURE :
 ==================
 
 codes :
+--------
 
 - main : runs the detectors and trackers —> open file to choose parameters
 - main_eval : runs the evaluation
@@ -50,23 +51,24 @@ codes :
 
 
 subfolders:
+-----------
 
-data : # videos from Domplatz for evaluation and display \
-- SMSQ20  # 50 frames, for evaluation
+- data : # videos from Domplatz for evaluation and display \
+  - SMSQ20  # 50 frames, for evaluation
 
-groundTruth : Contain the groundTruth for evaluation. Each file for gt is a txt file with the name of the video it refers to. Structure is like in MOT Challenge : frame , id , x , y, w , h , (conf)
+- groundTruth : Contain the groundTruth for evaluation. Each file for gt is a txt file with the name of the video it refers to. Structure is like in MOT Challenge : frame , id , x , y, w , h , (conf)
 
-Source_code : # this is the folder containing the code for the trackers and detectors \
-- ACF # Agregated channel feature detector (results from MATLAB peopleDetectorACF, no code)
-- Cascade # Cascade Detector (results from MATLAB CascadeObjectDetector, no code)
-- DC # Discrete continuous tracker (offline)
-- dollar # ACF detector
-- DPM # Deformable part model detector
-- HOG # HOG + SVM detector (results from MATLAB PeopleDetector, no code)
-- MDP # Markov Decision Process tracker
-- motchallenge-devkit # evaluation
-- motutils # some codes for DC
-- ROT # Robust online tracker based on tracklet confidence
+- Source_code : # this is the folder containing the code for the trackers and detectors \
+  - ACF # Agregated channel feature detector (results from MATLAB peopleDetectorACF, no code)
+  - Cascade # Cascade Detector (results from MATLAB CascadeObjectDetector, no code)
+  - DC # Discrete continuous tracker (offline)
+  - dollar # ACF detector
+  - DPM # Deformable part model detector
+  - HOG # HOG + SVM detector (results from MATLAB PeopleDetector, no code)
+  - MDP # Markov Decision Process tracker
+  - motchallenge-devkit # evaluation
+  - motutils # some codes for DC
+  - ROT # Robust online tracker based on tracklet confidence
 
 
 RUNNING :
