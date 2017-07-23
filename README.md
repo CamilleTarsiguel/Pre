@@ -10,10 +10,10 @@ May - July 2017
 Author : Camille Tarsiguel, camille.tarsiguel@ensta-paristech.fr
 
 Citation : I used and modified the code from the following articles
-- DC Tracking :
-- MDP Tracking : https://github.com/yuxng/MDP_Tracking
+- DC Tracking : Discrete-Continuous Optimization for Multi-Target Tracking, A. Andriyenko, K. Schindler and S. Roth, In: CVPR 2012. http://www.milanton.de/dctracking/
+- MDP Tracking : Learning to Track: Online Multi-Object Tracking by Decision Making, Xiang, Yu and Alahi, Alexandre and Savarese, Silvio, In: ICCV 2015. https://github.com/yuxng/MDP_Tracking
 - ROT Tracking :
-- Evaluation : MOT challenge devkit
+- Evaluation : MOT challenge devkit https://motchallenge.net
 - ACF detector and Caltech Pedestrian Dataset + Toolbox : P. Dollar
 - DPM detector :
 
