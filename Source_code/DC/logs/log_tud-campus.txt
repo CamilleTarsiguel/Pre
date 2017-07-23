@@ -1,0 +1,234 @@
+[metrics2d, metrics3d, allene, stateInfo, sceneInfo]=swDCTracker('scenes/TUD-Campus.ini','config/default2dSimple.ini');
+randruns =
+     1
+Recovered image format: 0000%02d.jpg
+sequence runs from frame 1 to frame 71 (71 frames)
+numLines =
+   359
+from    1 to   50 =   50
+Recovered image format: 0000%02d.jpg
+sequence runs from frame 1 to frame 71 (71 frames)
+numLines =
+   359
+applying sigmoid transform to det conf.
+ =====================================================================
+|                Discrete-Continuous Optimization                     |
+|                With Explicit Exclusion Handling                     |
+|                                                                     |
+|  Scenario: scenes/TUD-Campus.ini      Random Run:               1    |
+|  Dataset:                   TUD           Sequence:   TUD-Campus    |
+ =====================================================================
+
+--- Discrete-Continuous Multi-target Tracking ---
+Frames: ........  50 (1 .. 50)
+Image size: ....  640 x 480
+Detections file:   data/TUD-Campus/det/det.txt
+# Detections: ..  241
+Det conf range:.  0.535458 .. 1.000000
+Tracking on image plane (2D)
+13-Dec-2014 17:02:18
+ --------------------------- Parameters  ----------------------------
+detconf  shift: 0.00,  scale: 1.00
+Discrete Optimization settings:
+           alg: 'QPBO'
+      infParam: [1 1 1]
+    initSimple: 0
+Continuous Optimization settings:
+           alg: 'LBFGS'
+       maxIter: 200
+    initSimple: 1
+     enParEdat: [4 1 0.1000]
+     enParElin: [1 1 15 0 0]
+     enParEang: [1 15 0 0]
+     enParEper: [1 100 50]
+     enParEexc: [0.0500 39.2298 1]
+     enParEfid: [1 19.6149 1]
+     enParEseg: 2
+    0.1000    1.0000    0.0500    1.0000    1.0000    2.0000
+    track3d  verbosity        mex   visOptim      met2d keepHistor    cutToTA    randrun     remOcc maxItCount        occ     minCPs ncpsPerFra
+          0          3          1          0          1          2          0          1          0        100          0          1        0.1
+
+        tau borderMarg nInitModel  maxModels nMaxAddExt nMaxAddMer nAddRandom nAddModels startFromE startFromP startFromG     EKFDir      DPDir
+         10        100         10       2000         10         10         10         10          5          1          0         21         20
+
+ detThresho dataFuncti speedFunct fidFunctio unaryFacto  labelCost outlierCos persistenc curvatureF slopeFacto  segFactor proxcostFa exclusionF
+          0          4          3          4         10       1000        200          1          1      0.001         10          0          0
+
+ fidelityFa pairwiseFa goodnessFa   saveEnSS     frames  seqLength
+          0          1          1          0         50         50
+
+in building the graph...
+in DP tracking ...
+Elapsed time is 0.015591 seconds.
+Initial Result: 
+
+Evaluation 2D:
+ Rcll  Prcn   FAR| GT  MT  PT  ML|  FP   FN IDs  FM|  MOTA  MOTP MOTAL 
+ 66.4  71.9  1.36|  8   3   4   1|  68   88  29  14|  29.4  72.4  39.9 
+
+ -- S: 0000, (  1 :  50) --|| ------------- ENERGY  VALUES -----------------| ---------------- Label Cost ------------ |||  ----------- M E T R I C S (2D)---------- |||
+   it| time|tot|act|add|rem||  Energy|    Data| Smth| DetExc| TrjExc|  Lcost|   hreg|  hlin|  hang|  hper|  hocc|  hseg||| MOTA  MOTP| GT  MT  ML|  FP   FN IDs  FM |
+ i  0|  0.0| 27|  0|  0|  0|| 47969.7| 47969.7|  0.0|    0.0|    0.0|    0.0|    0.0|   0.0|   0.0|   0.0|   0.0|   0.0|||  0.0   0.0   8   0   8|   0  262   0   0| 
+ d  1|  0.0| 27|  8|  0|  0|| 40825.1| 31328.3|  2.0|    0.0|    0.0| 9494.8| 8000.0| 927.0|  60.9|   0.0|   0.0| 506.9||| 39.7  76.9   8   3   3|   0  156   2   1| 
+ r  2|  0.0| 27|  8|  0|  0|| 40825.1| 31328.3|  2.0|    0.0|    0.0| 9494.8| 8000.0| 927.0|  60.9|   0.0|   0.0| 506.9|||
+
+ -- S: 0000, (  1 :  50) --|| ------------- ENERGY  VALUES -----------------| ---------------- Label Cost ------------ |||  ----------- M E T R I C S (2D)---------- |||
+   it| time|tot|act|add|rem||  Energy|    Data| Smth| DetExc| TrjExc|  Lcost|   hreg|  hlin|  hang|  hper|  hocc|  hseg||| MOTA  MOTP| GT  MT  ML|  FP   FN IDs  FM |
+ s  0|  0.0| 27|  8|  0|  0|| 40825.1| 31328.3|  2.0|    0.0|    0.0| 9494.8| 8000.0| 927.0|  60.9|   0.0|   0.0| 506.9||| 39.7  76.9   8   3   3|   0  156   2   1| 
+ c  3|  0.0| 27|  8|  0|  0|| 40825.1| 31328.3|  2.0|    0.0|    0.0| 9494.8| 8000.0| 927.0|  60.9|   0.0|   0.0| 506.9|||
+ d  4|  0.0| 69|  7| 61| 19|| 39825.3| 30822.3|  2.0|    0.0|    0.0| 9001.0| 7000.0|1072.2|  66.6|   0.0|   0.0| 862.2|||
+ r  5|  0.0| 69|  7| 61| 19|| 39825.3| 30822.3|  2.0|    0.0|    0.0| 9001.0| 7000.0|1072.2|  66.6|   0.0|   0.0| 862.2||| 42.4  76.7   8   3   1|   5  146   0   0| 
+
+ -- S: 0000, (  1 :  50) --|| ------------- ENERGY  VALUES -----------------| ---------------- Label Cost ------------ |||  ----------- M E T R I C S (2D)---------- |||
+   it| time|tot|act|add|rem||  Energy|    Data| Smth| DetExc| TrjExc|  Lcost|   hreg|  hlin|  hang|  hper|  hocc|  hseg||| MOTA  MOTP| GT  MT  ML|  FP   FN IDs  FM |
+ s  0|  0.0| 69|  7|  0|  0|| 39520.9| 30507.3|  2.0|    0.0|    0.0| 9011.6| 7000.0|1080.7|  87.3|   0.0|   0.0| 843.5||| 40.8  76.9   8   3   2|   9  145   1   1| 
+ c  6|  0.1| 69|  7| 61| 19|| 39520.9| 30507.3|  2.0|    0.0|    0.0| 9011.6| 7000.0|1080.7|  87.3|   0.0|   0.0| 843.5|||
+ d  7|  0.1| 71|  6| 59| 57|| 38620.6| 30078.4|  2.0|    0.0|    0.0| 8540.3| 6000.0|1321.6| 111.2|   0.0|   0.0|1107.5|||
+ r  8|  0.1| 71|  6| 59| 57|| 38620.6| 30078.4|  2.0|    0.0|    0.0| 8540.3| 6000.0|1321.6| 111.2|   0.0|   0.0|1107.5|||
+
+ -- S: 0000, (  1 :  50) --|| ------------- ENERGY  VALUES -----------------| ---------------- Label Cost ------------ |||  ----------- M E T R I C S (2D)---------- |||
+   it| time|tot|act|add|rem||  Energy|    Data| Smth| DetExc| TrjExc|  Lcost|   hreg|  hlin|  hang|  hper|  hocc|  hseg||| MOTA  MOTP| GT  MT  ML|  FP   FN IDs  FM |
+ s  0|  0.1| 71|  6|  0|  0|| 38573.8| 30063.8|  2.0|    0.0|    0.0| 8507.9| 6000.0|1336.9| 109.9|   0.0|   0.0|1061.1||| 42.7  74.4   8   3   2|  13  136   1   1| 
+ c  9|  0.1| 71|  6| 59| 57|| 38573.8| 30063.8|  2.0|    0.0|    0.0| 8507.9| 6000.0|1336.9| 109.9|   0.0|   0.0|1061.1|||
+
+ -- S: 0000, (  1 :  50) --|| ------------- ENERGY  VALUES -----------------| ---------------- Label Cost ------------ |||  ----------- M E T R I C S (2D)---------- |||
+   it| time|tot|act|add|rem||  Energy|    Data| Smth| DetExc| TrjExc|  Lcost|   hreg|  hlin|  hang|  hper|  hocc|  hseg||| MOTA  MOTP| GT  MT  ML|  FP   FN IDs  FM |
+ d 10|  0.1| 63|  6| 53| 61|| 37996.4| 28856.7|  2.0|    0.0|    0.0| 9137.8| 6000.0|1599.0| 134.4|   0.0|   0.0|1404.4||| 40.5  74.9   8   3   1|  25  130   1   2| 
+ r 11|  0.1| 63|  6| 53| 61|| 37996.4| 28856.7|  2.0|    0.0|    0.0| 9137.8| 6000.0|1599.0| 134.4|   0.0|   0.0|1404.4|||
+
+ -- S: 0000, (  1 :  50) --|| ------------- ENERGY  VALUES -----------------| ---------------- Label Cost ------------ |||  ----------- M E T R I C S (2D)---------- |||
+   it| time|tot|act|add|rem||  Energy|    Data| Smth| DetExc| TrjExc|  Lcost|   hreg|  hlin|  hang|  hper|  hocc|  hseg||| MOTA  MOTP| GT  MT  ML|  FP   FN IDs  FM |
+ s  0|  0.1| 63|  6|  0|  0|| 37538.6| 28650.6|  2.0|    0.0|    0.0| 8886.0| 6000.0|1598.7| 134.0|   0.0|   0.0|1153.4||| 40.5  74.9   8   3   1|  25  130   1   2| 
+ c 12|  0.1| 63|  6| 53| 61|| 37538.6| 28650.6|  2.0|    0.0|    0.0| 8886.0| 6000.0|1598.7| 134.0|   0.0|   0.0|1153.4|||
+ d 13|  0.1| 61|  6| 51| 53|| 37458.5| 28704.8|  2.0|    0.0|    0.0| 8751.7| 6000.0|1590.8| 127.1|   0.0|   0.0|1033.8|||
+ r 14|  0.1| 61|  6| 51| 53|| 37458.5| 28704.8|  2.0|    0.0|    0.0| 8751.7| 6000.0|1590.8| 127.1|   0.0|   0.0|1033.8|||
+
+ -- S: 0000, (  1 :  50) --|| ------------- ENERGY  VALUES -----------------| ---------------- Label Cost ------------ |||  ----------- M E T R I C S (2D)---------- |||
+   it| time|tot|act|add|rem||  Energy|    Data| Smth| DetExc| TrjExc|  Lcost|   hreg|  hlin|  hang|  hper|  hocc|  hseg||| MOTA  MOTP| GT  MT  ML|  FP   FN IDs  FM |
+ s  0|  0.1| 61|  6|  0|  0|| 37458.5| 28704.8|  2.0|    0.0|    0.0| 8751.7| 6000.0|1590.8| 127.1|   0.0|   0.0|1033.8||| 40.5  75.2   8   3   1|  26  129   1   2| 
+ c 15|  0.1| 61|  6| 51| 53|| 37458.5| 28704.8|  2.0|    0.0|    0.0| 8751.7| 6000.0|1590.8| 127.1|   0.0|   0.0|1033.8||| 40.5  75.2   8   3   1|  26  129   1   2| 
+ d 16|  0.1| 57|  6| 50| 54|| 37458.5| 28704.8|  2.0|    0.0|    0.0| 8751.7| 6000.0|1590.8| 127.1|   0.0|   0.0|1033.8|||
+Discrete Optimization did not find a lower energy.
+All done (0.13 min = 0.00h = 0.15 sec per frame)
+
+Evaluation 2D:
+ Rcll  Prcn   FAR| GT  MT  PT  ML|  FP   FN IDs  FM|  MOTA  MOTP MOTAL 
+ 50.8  83.6  0.52|  8   3   4   1|  26  129   1   2|  40.5  75.2  40.7 
+from   46 to   71 =   26
+Recovered image format: 0000%02d.jpg
+sequence runs from frame 1 to frame 71 (71 frames)
+numLines =
+   359
+applying sigmoid transform to det conf.
+ =====================================================================
+|                Discrete-Continuous Optimization                     |
+|                With Explicit Exclusion Handling                     |
+|                                                                     |
+|  Scenario: scenes/TUD-Campus.ini      Random Run:               1    |
+|  Dataset:                   TUD           Sequence:   TUD-Campus    |
+ =====================================================================
+
+--- Discrete-Continuous Multi-target Tracking ---
+Frames: ........  26 (46 .. 71)
+Image size: ....  640 x 480
+Detections file:   data/TUD-Campus/det/det.txt
+# Detections: ..  123
+Det conf range:.  0.983419 .. 1.000000
+Tracking on image plane (2D)
+13-Dec-2014 17:02:26
+ --------------------------- Parameters  ----------------------------
+detconf  shift: 0.00,  scale: 1.00
+Discrete Optimization settings:
+           alg: 'QPBO'
+      infParam: [1 1 1]
+    initSimple: 0
+Continuous Optimization settings:
+           alg: 'LBFGS'
+       maxIter: 200
+    initSimple: 1
+     enParEdat: [4 1 0.1000]
+     enParElin: [1 1 15 0 0]
+     enParEang: [1 15 0 0]
+     enParEper: [1 100 26]
+     enParEexc: [0.0500 37.4187 1]
+     enParEfid: [1 18.7093 1]
+     enParEseg: 2
+    0.1000    1.0000    0.0500    1.0000    1.0000    2.0000
+    track3d  verbosity        mex   visOptim      met2d keepHistor    cutToTA    randrun     remOcc maxItCount        occ     minCPs ncpsPerFra
+          0          3          1          0          1          2          0          1          0        100          0          1        0.1
+
+        tau borderMarg nInitModel  maxModels nMaxAddExt nMaxAddMer nAddRandom nAddModels startFromE startFromP startFromG     EKFDir      DPDir
+         10        100         10       2000         10         10         10         10          5          1          0         21         20
+
+ detThresho dataFuncti speedFunct fidFunctio unaryFacto  labelCost outlierCos persistenc curvatureF slopeFacto  segFactor proxcostFa exclusionF
+          0          4          3          4         10       1000        200          1          1      0.001         10          0          0
+
+ fidelityFa pairwiseFa goodnessFa   saveEnSS     frames  seqLength
+          0          1          1          0         26         26
+
+in building the graph...
+in DP tracking ...
+Elapsed time is 0.008461 seconds.
+Initial Result: 
+
+Evaluation 2D:
+ Rcll  Prcn   FAR| GT  MT  PT  ML|  FP   FN IDs  FM|  MOTA  MOTP MOTAL 
+ 81.5  81.5  0.88|  6   3   2   1|  23   23  16   1|  50.0  74.2  61.9 
+
+ -- S: 0000, ( 46 :  71) --|| ------------- ENERGY  VALUES -----------------| ---------------- Label Cost ------------ |||  ----------- M E T R I C S (2D)---------- |||
+   it| time|tot|act|add|rem||  Energy|    Data| Smth| DetExc| TrjExc|  Lcost|   hreg|  hlin|  hang|  hper|  hocc|  hseg||| MOTA  MOTP| GT  MT  ML|  FP   FN IDs  FM |
+ i  0|  0.0| 18|  0|  0|  0|| 24594.1| 24594.1|  0.0|    0.0|    0.0|    0.0|    0.0|   0.0|   0.0|   0.0|   0.0|   0.0|||  0.0   0.0   6   0   6|   0  124   0   0| 
+ d  1|  0.0| 18|  5|  0|  0|| 18842.9| 12850.4|  3.0|    0.0|    0.0| 5989.5| 5000.0| 725.3|  26.7|   0.0|   0.0| 237.5||| 62.1  76.3   6   1   1|   0   46   1   1| 
+ r  2|  0.0| 18|  5|  0|  0|| 18842.9| 12850.4|  3.0|    0.0|    0.0| 5989.5| 5000.0| 725.3|  26.7|   0.0|   0.0| 237.5|||
+
+ -- S: 0000, ( 46 :  71) --|| ------------- ENERGY  VALUES -----------------| ---------------- Label Cost ------------ |||  ----------- M E T R I C S (2D)---------- |||
+   it| time|tot|act|add|rem||  Energy|    Data| Smth| DetExc| TrjExc|  Lcost|   hreg|  hlin|  hang|  hper|  hocc|  hseg||| MOTA  MOTP| GT  MT  ML|  FP   FN IDs  FM |
+ s  0|  0.0| 18|  5|  0|  0|| 18842.9| 12850.4|  3.0|    0.0|    0.0| 5989.5| 5000.0| 725.3|  26.7|   0.0|   0.0| 237.5||| 62.1  76.3   6   1   1|   0   46   1   1| 
+ c  3|  0.0| 18|  5|  0|  0|| 18842.9| 12850.4|  3.0|    0.0|    0.0| 5989.5| 5000.0| 725.3|  26.7|   0.0|   0.0| 237.5|||
+ d  4|  0.0| 45|  4| 40| 13|| 18056.1| 12754.5|  3.0|    0.0|    0.0| 5298.7| 4000.0| 923.8|  29.4|   0.0|   0.0| 345.5|||
+ r  5|  0.0| 45|  4| 40| 13|| 18056.1| 12754.5|  3.0|    0.0|    0.0| 5298.7| 4000.0| 923.8|  29.4|   0.0|   0.0| 345.5||| 70.2  75.8   6   2   1|   0   37   0   0| 
+
+ -- S: 0000, ( 46 :  71) --|| ------------- ENERGY  VALUES -----------------| ---------------- Label Cost ------------ |||  ----------- M E T R I C S (2D)---------- |||
+   it| time|tot|act|add|rem||  Energy|    Data| Smth| DetExc| TrjExc|  Lcost|   hreg|  hlin|  hang|  hper|  hocc|  hseg||| MOTA  MOTP| GT  MT  ML|  FP   FN IDs  FM |
+ s  0|  0.0| 45|  4|  0|  0|| 18056.1| 12754.5|  3.0|    0.0|    0.0| 5298.7| 4000.0| 923.8|  29.4|   0.0|   0.0| 345.5||| 70.2  75.8   6   2   1|   0   37   0   0| 
+ c  6|  0.0| 45|  4| 40| 13|| 18056.1| 12754.5|  3.0|    0.0|    0.0| 5298.7| 4000.0| 923.8|  29.4|   0.0|   0.0| 345.5|||
+ d  7|  0.0| 38|  4| 32| 39|| 18056.1| 12754.5|  3.0|    0.0|    0.0| 5298.7| 4000.0| 923.8|  29.4|   0.0|   0.0| 345.5|||
+Discrete Optimization did not find a lower energy.
+All done (0.04 min = 0.00h = 0.09 sec per frame)
+
+Evaluation 2D:
+ Rcll  Prcn   FAR| GT  MT  PT  ML|  FP   FN IDs  FM|  MOTA  MOTP MOTAL 
+ 70.2 100.0  0.00|  6   2   3   1|   0   37   0   0|  70.2  75.8  70.2 
+Recovered image format: 0000%02d.jpg
+sequence runs from frame 1 to frame 71 (71 frames)
+numLines =
+   359
+
+Evaluation 2D:
+ Rcll  Prcn   FAR| GT  MT  PT  ML|  FP   FN IDs  FM|  MOTA  MOTP MOTAL 
+ 59.6  87.0  0.45|  8   4   4   0|  32  145   4   4|  49.6  75.6  50.5 
+Recovered image format: 0000%02d.jpg
+sequence runs from frame 1 to frame 71 (71 frames)
+numLines =
+   359
+allallens =
+   1.0e+04 *
+    3.7459    0.0002         0    0.8752         0
+    1.8056    0.0003         0    0.5299         0
+allens =
+   1.0e+04 *
+    2.7757    0.0003         0    0.7025         0
+ans =
+   49.5822
+ans =
+     0
+RRens =
+   1.0e+04 *
+    2.7757    0.0003         0    0.7025         0
+ans =
+   3.4785e+04
+Best Run: 1, energy: 34785.005634
+
+Evaluation 2D:
+ Rcll  Prcn   FAR| GT  MT  PT  ML|  FP   FN IDs  FM|  MOTA  MOTP MOTAL 
+ 59.6  87.0  0.45|  8   4   4   0|  32  145   4   4|  49.6  75.6  50.5 

@@ -1,0 +1,12 @@
+syntax: glob
+data/init/*
+data/cvpr*
+data/det*
+data/gt*
+external/*
+out/*
+tmp/*
+logs/*
+config/11*
+config/12*
+results/*
