@@ -3,6 +3,8 @@ function [Trk,param,Y_set] = MOT_Initialization_Tracklets(rgbimg,Trk,detections,
 %% All rights reserved.
 
 new_thr = param.new_thr;
+
+
 for i=1:length(Y_set(fr).child)
     prt_idx = Y_set(fr).child{i};
     if length(prt_idx) <= 1

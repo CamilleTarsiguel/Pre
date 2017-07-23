@@ -17,7 +17,7 @@ for q=start_frame+1:end_frame
         ovs1 = calc_overlap2(cur_det,prev_det,i);
         inds1 = find(ovs1 > 0.4);
         ratio1 = cur_det.h(i)./prev_det.h(inds1);
-        inds2 = (min(ratio1, 1./ratio1) > 0.8); 
+        inds2 = (min(ratio1, 1./ratio1) > 0.5); 
         if ~isempty(inds1(inds2))
             Y(q).child{i} = inds1(inds2);  
         else

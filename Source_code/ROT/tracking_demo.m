@@ -9,9 +9,9 @@ function [Trk_sets, detections, all_mot] = tracking_demo(filename, detector, dis
 %clear all
 base = [pwd, '/'];
 addpath(genpath(base));
-
-%global filename;
-
+fprintf('You choose the video %s \n', filename);
+global Filename;
+Filename = filename;
 mot_setting_params;
 switch detector
     case 'ACF'
@@ -125,8 +125,11 @@ for i=1:init_frame
     Obs_grap(i).child = [];
     Obs_grap(i).iso_child =[];
     init_img_set{i} = frame;
+%     figure;
+%     img = insertObjectAnnotation(frame, 'rectangle', bboxes, score);
+%     imshow(img);
+%     pause;
 end
-
 
 [Obs_grap] = mot_pre_association(detections,Obs_grap,frame_start,init_frame);
 % st_fr = 1;
@@ -139,7 +142,9 @@ fprintf('Initialization Tracklets finished \n');
 %% Tracking
 disp('Tracking objects...');
 for fr = init_frame+1:frame_end
-    
+    if fr ==10
+        param.new_thr = 5;
+    end
     rgbimg = readFrame(reader);
     %     [bboxes, score ] = detect(detector, frame);
     if var_peopleDetectorACF

@@ -1,10 +1,10 @@
 %% Copyright (C) 2014 Seung-Hwan Bae
 %% All rights reserved.
 
-global filename;
+global Filename;
 %% Get image lists 
 %img_path = 'Sequences/ETH_Bahnhof/';
-video_path = filename;
+video_path = Filename;
 %img_List = dir(strcat(img_path,'*.png'));
 % img_List = dir(fullfile(video_path, '*.jpg'));
 % [~, index] = natsortfiles({img_List.name}) ;
