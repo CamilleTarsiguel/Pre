@@ -3,9 +3,9 @@ function memory = MOT_KLT(filename, display)
 
 %% Choose detector
 
-var_peopleDetectorACF = false;
+var_peopleDetectorACF = true;
 var_CascadeObjectDetector = false;
-var_PeopleDetector = true;
+var_PeopleDetector = false;
 
 
 %% Create System objects used for reading video, detecting moving objects,
@@ -20,25 +20,28 @@ obj = setupSystemObjects();
 % Go to the first frame where there is a detection
 numframe = 1; 
 frame = readFrame();
-for i=1:116
-    frame = readFrame();
-    numframe = numframe + 1;
-end
+% for i=1:116
+%     frame = readFrame();
+%     numframe = numframe + 1;
+%     fprintf("Waiting for detection, fr no %d\n", numframe);
+% end
 
 bboxes = detectObjects(frame);
 while isempty(bboxes)
     frame = readFrame();
     numframe = numframe + 1;
     bboxes = detectObjects(frame);
+    fprintf("Waiting for detection, fr no %d\n", numframe);
 end
-obj.tracker.addDetections(rgb2gray(frame), bboxes);
+obj.tracker.addDetections(rgb2gray(frame), bboxes, numframe);
 % Detect moving objects, and track them across video frames.
 while ~isDone(obj.reader)
+    numframe = numframe + 1;
     if mod(numframe, 10) == 0
         bboxes = detectObjects(frame);
-        obj.tracker.addDetections(rgb2gray(frame), bboxes);
+        obj.tracker.addDetections(rgb2gray(frame), bboxes, numframe);
     else
-        obj.tracker.track(rgb2gray(frame));
+        obj.tracker.track(rgb2gray(frame), numframe);
     end
 %     predictNewLocationsOfTracks();
 %     [assignments, unassignedTracks, unassignedDetections] = ...
@@ -52,7 +55,7 @@ while ~isDone(obj.reader)
         displayTrackingResults();
     end
    frame = readFrame();
-   numframe = numframe + 1;
+   
 end
 
  % keep in memory all the tracks
@@ -78,7 +81,7 @@ memory = obj.tracker.Memory;
         
        
         if var_peopleDetectorACF
-            obj.detector = peopleDetectorACF;
+            obj.detector = peopleDetectorACF('caltech-50x21');
         end
         if var_CascadeObjectDetector
             obj.detector = vision.CascadeObjectDetector('UpperBody');
@@ -110,8 +113,13 @@ memory = obj.tracker.Memory;
 
     function bboxes = detectObjects(frame)
 
+        maxH = 100;
+        minH = 2;
+        maxW = 70;
+        minW = 2;
+        
         if var_peopleDetectorACF
-            [bboxes, ~ ] = detect(obj.detector, frame);
+            [bboxes, score ] = detect(obj.detector, frame);
             %centroids = [bboxes(:,1) + 0.5 * bboxes(:,3) bboxes(:,2) - 0.5 * bboxes(:,4)];
         end
         if var_CascadeObjectDetector
@@ -120,9 +128,22 @@ memory = obj.tracker.Memory;
         end
         
         if var_PeopleDetector
-            [bboxes, ~ ] = step(obj.detector, frame);
+            [bboxes, score ] = step(obj.detector, frame);
             %centroids = [bboxes(:,1) + 0.5 * bboxes(:,3) bboxes(:,2) - 0.5 * bboxes(:,4)];
         end
+        
+        index = [bboxes(:,3)<maxW];
+        bboxes = bboxes(index, :);
+       % score = score(index, 1);
+        index = [bboxes(:,3)>minW];
+        bboxes = bboxes(index, :);
+       % score = score(index, 1);
+        index = [bboxes(:,4)<maxH];
+        bboxes = bboxes(index, :);
+       % score = score(index, 1);
+        index = [bboxes(:,4)>minH];
+        bboxes = bboxes(index, :);
+       % score = score(index, 1);
     end
 
 

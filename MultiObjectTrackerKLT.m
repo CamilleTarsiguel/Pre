@@ -42,7 +42,7 @@ classdef MultiObjectTrackerKLT < handle
         BoxScores = [];
         
         % Memory struct. This keeps the memory of the tracks.
-        Memory = struct('bboxes', {}, 'age', {});
+        Memory = struct('bboxes', {}, 'frame', {});
     end
     
     methods
@@ -54,7 +54,7 @@ classdef MultiObjectTrackerKLT < handle
         end
         
         %------------------------------------------------------------------
-        function addDetections(this, I, bboxes)
+        function addDetections(this, I, bboxes, numframe)
         % addDetections Add detected bounding boxes.
         % addDetections(tracker, I, bboxes) adds detected bounding boxes.
         % tracker is the MultiObjectTrackerKLT object, I is the current
@@ -78,11 +78,11 @@ classdef MultiObjectTrackerKLT < handle
                     this.BoxScores(end+1) = 1;
                     %this.Memory.id(end + 1) = this.NextId;
                     this.Memory(this.NextId).bboxes = bboxes(i,:);
-                    this.Memory(this.NextId).age = 1;
+                    this.Memory(this.NextId).frame = numframe;
                     this.NextId = this.NextId + 1;
                 else % The object already exists.
                     this.Memory(boxIdx).bboxes = [this.Memory(boxIdx).bboxes; bboxes(i,:)];
-                    this.Memory(boxIdx).age = this.Memory(boxIdx).age + 1;
+                    this.Memory(boxIdx).frame = [this.Memory(boxIdx).frame ; numframe];
                     % Delete the matched box
                     currentBoxScore = this.deleteBox(boxIdx);
                     
@@ -120,7 +120,7 @@ classdef MultiObjectTrackerKLT < handle
         end
                 
         %------------------------------------------------------------------
-        function track(this, I)
+        function track(this, I, numframe)
         % TRACK Track the objects.
         % TRACK(tracker, I) tracks the objects into frame I. tracker is the
         % MultiObjectTrackerKLT object, I is the current video frame. This
@@ -128,7 +128,7 @@ classdef MultiObjectTrackerKLT < handle
             [newPoints, isFound] = this.PointTracker.step(I);
             this.Points = newPoints(isFound, :);
             this.PointIds = this.PointIds(isFound);
-            generateNewBoxes(this);
+            generateNewBoxes(this, numframe);
             if ~isempty(this.Points)
                 this.PointTracker.setPoints(this.Points);
             end
@@ -162,7 +162,7 @@ classdef MultiObjectTrackerKLT < handle
         end
         
         %------------------------------------------------------------------
-        function generateNewBoxes(this)  
+        function generateNewBoxes(this, numframe)  
         % Get bounding boxes for each object from tracked points.
             oldBoxIds = this.BoxIds;
             oldScores = this.BoxScores;
@@ -176,7 +176,7 @@ classdef MultiObjectTrackerKLT < handle
                 this.Bboxes(i, :) = newBox;
                 this.BoxScores(i) = oldScores(oldBoxIds == this.BoxIds(i));
                 this.Memory(this.BoxIds(i)).bboxes = [this.Memory(this.BoxIds(i)).bboxes ; this.Bboxes(i, :)];
-                this.Memory(this.BoxIds(i)).age = this.Memory(this.BoxIds(i)).age + 1;
+                this.Memory(this.BoxIds(i)).frame = [this.Memory(this.BoxIds(i)).frame ; numframe];
             end
         end 
     end

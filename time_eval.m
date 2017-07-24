@@ -1,4 +1,4 @@
-%%%% MAIN MAIN MAIN %%%%%
+%%%% MAIN AVG FPS %%%%%
 root = cd;
 %% Detection only or Tracking?
 
@@ -17,7 +17,7 @@ var_Smsq2 = false;
 
 var_SMSQ13 = false;
 
-var_SMSQ20 = false;
+var_SMSQ20 = true;
 
 var_SMSQ24 = false;
 
@@ -25,7 +25,7 @@ var_SMSQ16 = false;
 
 var_SMSQ14 = false;
 
-var_SMSQ17 = true;
+var_SMSQ17 = false;
 
 
 
@@ -58,7 +58,7 @@ end
 
 %% Choose tracker
 
-var_MDP = false; % MDP tracking
+var_MDP = true; % MDP tracking
 
 var_DC = false; % Discrete continuous tracking
 
@@ -68,7 +68,7 @@ var_MOT = false; % Baseline with blob analysis
 
 var_MOTv2 = false; % MOT with detectors
 
-var_KLT = true; % Online tracker based on KLT
+var_KLT = false; % Online tracker based on KLT
 
 
 
@@ -108,7 +108,19 @@ if var_SMSQ17 % Video from the Kitta (group of people)
 end
 %% Display mode
 
-display = true;
+display = false;
+if var_MDP 
+    cd('Source_code/MDP/');
+end
+
+if var_DC 
+    cd('Source_code/DC');
+end
+if var_ROT
+    cd('Source_code/ROT');
+end
+
+for iii = 1 : 10
 starting = tic;
 %% Detection (offline)
 if (var_DC||det) % For now the detectors are still not turned into online trackers
@@ -119,13 +131,12 @@ end
 if trk
     fprintf('Tracking Start\n');
     if var_MDP
-        cd('Source_code/MDP/');
         fprintf('MDP Tracking ... \n');
         [dres_track, dres_image, dres_det] = MOT_test_1(filename, detector, display);
     end
     
     if var_DC
-        cd('Source_code/DC');
+        
         fprintf('DC Tracking ... \n');
         % Execute
         [metrics2d, metrics3d, allen, stateInfo, sceneInfo]=swDCTracker('scenes/perso.ini','config/default2dSimple.ini');
@@ -151,7 +162,6 @@ if trk
         
     end
     if var_ROT
-        cd('Source_code/ROT');
         fprintf('ROT Tracking ... \n');
         [Trk_sets, detections, all_mot] = tracking_demo(filename, detector, display);
         
@@ -203,10 +213,14 @@ if trk
         csvwrite(fullfile('Source_code', 'KLT','results', strcat(videoname, '.txt')),fr);
     end
 end
-time = toc(starting);
-fprintf("Tracking done in %f \n", time);
+time(iii) = toc(starting);
+end
 reader = VideoReader(filename);
 nbf = reader.NumberOfFrames;
-speed = nbf/time;
-fprintf("Speed is %d fps \n", speed);
+speed = nbf*ones(1, 10)./time;
+avg = sum(speed)/10;
+fprintf("Avg speed is %d fps \n", avg);
+load handel
+sound(y,Fs)
+
 cd(root);

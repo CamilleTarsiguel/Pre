@@ -1,0 +1,69 @@
+Test June 8 pm 
+algo = MOT , display = 0, on video = data/MOT16-04.mp4, execution Time = 4.779080e-04Test June 8 pm 
+Test June 8 pm 
+algo = MOT , display = 0, on video = data/MOT16-04.mp4, execution Time = 3.292374e+02Test June 9 am 
+algo = MOT , display = 0, on video = atrium.mp4, execution Time = 5.456727e+01 
+Test June 9 am 
+algo = MOT , display = 0, on video = atrium.mp4, execution Time = 2.142712e+01 
+Test June 9 am 
+algo = MOT , display = 0, on video = atrium.mp4, execution Time = 2.317309e+01 
+Test June 9 am 
+algo = MOT , display = 0, on video = atrium.mp4, execution Time = 2.349471e+01 
+Test June 9 am 
+Test June 9 am 
+Test June 9 am 
+algo = MOT , display = 0, on video = atrium.mp4, execution Time = 2.576477e+01 
+Test June 9 am 
+algo = MOT , display = 0, on video = atrium.mp4, execution Time = 2.852875e+01 
+Test June 9 am 
+Test June 9 am 
+Test June 9 am 
+algo = MOT , display = 1, on video = atrium.mp4, execution Time = 3.995489e+01 
+Test June 9 am 
+algo = MOT , display = 1, on video = data/MOT16-04.mp4, execution Time = 5.397158e+02 
+Test 14-Jun-2017 
+algo = MOT v2 , display = 0, on video = data/MOT16-04.mp4, execution Time = 7.025774e+02  
+Test 14-Jun-2017 
+algo = MOT v2 , display = 1, on video = data/MOT16-04.mp4, execution Time = 8.225060e+02  
+Test 14-Jun-2017 
+algo = MOT v2 , display = 1, on video = data/MOT16-04.mp4, execution Time = 7.837983e+02  
+Test 14-Jun-2017 
+algo = MOT , display = 1, on video = atrium.mp4, execution Time = 9.974570e+01 
+Test 14-Jun-2017 
+algo = MOT , display = 1, on video = atrium.mp4, execution Time = 4.528693e+01  
+Test 14-Jun-2017 
+algo = MOT , display = 1, on video = atrium.mp4, execution Time = 6.577179e+01  
+Test 15-Jun-2017 
+algo = MOT , display = 1, on video = data/SmSq1.m4v, execution Time = 1.228943e+03 
+Test 16-Jun-2017 
+algo = MOT , display = 1, on video = data/SmSq1.m4v, execution Time = 6.114657e+02 
+Test 16-Jun-2017 
+algo = MOT , display = 1, on video = data/SmSq1.m4v, execution Time = 5.170721e+02
+Test 19-Jul-2017 
+algo = KLT , display = 1, on video = data/SMSQ20short50.avi, execution Time = 5.321685e+00 
+Test 19-Jul-2017 
+algo = KLT , display = 1, on video = data/SMSQ20short50.avi, execution Time = 5.522463e+00 
+Test 19-Jul-2017 
+algo = KLT , display = 1, on video = data/SMSQ20short.avi, execution Time = 3.666478e+01 
+Test 19-Jul-2017 
+algo = KLT , display = 1, on video = data/SMSQ20short50.avi, execution Time = 6.332808e+00 
+Test 19-Jul-2017 
+algo = KLT , display = 1, on video = data/SMSQ20short50.avi, execution Time = 1.685217e+01 
+Test 19-Jul-2017 
+algo = KLT , display = 1, on video = data/SMSQ20short50.avi, execution Time = 1.864592e+01 
+Test 19-Jul-2017 
+algo = KLT , display = 1, on video = data/SMSQ20short50.avi, execution Time = 1.741876e+01 
+Test 19-Jul-2017 
+algo = KLT , display = 1, on video = data/SMSQ20short50.avi, execution Time = 1.815617e+01 
+Test 19-Jul-2017 
+Test 19-Jul-2017 
+algo = KLT , display = 1, on video = data/SMSQ20short50.avi, execution Time = 1.889281e+01 
+Test 19-Jul-2017 
+Test 19-Jul-2017 
+algo = KLT , display = 1, on video = data/SMSQ20short50.avi, execution Time = 1.842592e+01 
+Test 19-Jul-2017 
+algo = KLT , display = 1, on video = data/SMSQ20short50.avi, execution Time = 1.956033e+01 
+Test 19-Jul-2017 
+algo = KLT , display = 0, on video = data/SMSQ20short50.avi, execution Time = 1.378222e+01 
+Test 19-Jul-2017 
+algo = KLT , display = 0, on video = data/SMSQ20short50.avi, execution Time = 1.270533e+01 

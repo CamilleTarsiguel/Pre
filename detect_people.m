@@ -190,6 +190,7 @@ csvwrite(str, memory);
         % Display the frame.
           
         obj.videoPlayer.step(frame);
+        pause;
     end
 
 
