@@ -1,0 +1,2 @@
+% bbGt version=3
+people 501 172 25 29 0 0 0 0 0 0 0

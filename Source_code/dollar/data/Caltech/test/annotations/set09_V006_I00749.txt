@@ -1,0 +1,2 @@
+% bbGt version=3
+person 555 173 46 80 0 0 0 0 0 0 0

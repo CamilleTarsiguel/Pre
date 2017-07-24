@@ -1,0 +1,2 @@
+% bbGt version=3
+person 302 186 31 57 0 0 0 0 0 0 0

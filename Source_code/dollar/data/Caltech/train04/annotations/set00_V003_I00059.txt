@@ -1,0 +1,2 @@
+% bbGt version=3
+people 444 165 55 38 0 0 0 0 0 0 0

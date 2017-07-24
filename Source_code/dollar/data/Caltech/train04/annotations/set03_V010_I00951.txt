@@ -1,0 +1,4 @@
+% bbGt version=3
+person-fa 599 167 21 40 0 0 0 0 0 0 0
+person? 77 176 16 31 0 0 0 0 0 0 0
+person 413 174 16 35 0 0 0 0 0 0 0

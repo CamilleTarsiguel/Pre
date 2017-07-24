@@ -1,0 +1,2 @@
+% bbGt version=3
+person-fa 360 167 17 48 0 0 0 0 0 0 0

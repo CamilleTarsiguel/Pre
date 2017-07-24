@@ -1,0 +1,2 @@
+% bbGt version=3
+person 542 177 27 49 0 0 0 0 0 0 0

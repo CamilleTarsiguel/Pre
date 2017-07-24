@@ -1,0 +1,2 @@
+% bbGt version=3
+people 501 176 66 51 0 0 0 0 0 0 0

@@ -1,0 +1,2 @@
+% bbGt version=3
+person 607 155 21 57 0 0 0 0 0 0 0
