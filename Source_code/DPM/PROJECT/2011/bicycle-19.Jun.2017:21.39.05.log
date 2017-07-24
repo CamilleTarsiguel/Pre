@@ -1,0 +1,20 @@
+<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/data/pascal_data.m',37,1)">37  </a>  ids      = textread(sprintf(VOCopts.imgsetpath, dataset_fg), '%s');
+cd /Users/CamilleT
+ls
+AnacondaProjects	Desktop			Movies			Public			envs			ipython.html
+AndroidStudioProjects	Documents		Music			anaconda		gurobi.lic		restore
+Applications		Downloads		Pictures		build			gurobi.log
+Bibliotheque calibre	Library			Polyspace_Workspace	cast_64_16		intel
+
+cd Document/MATLAB/Pre
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cd')" style="font-weight:bold">cd</a>
+Cannot CD to Document/MATLAB/Pre (Name is nonexistent or not a directory).
+} 
+cd Document/MATLAB/Pre
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cd')" style="font-weight:bold">cd</a>
+Cannot CD to Document/MATLAB/Pre (Name is nonexistent or not a directory).
+} 
+cd Documents/MATLAB/Pre
+cd Source_code/10
+if system_dependent('IsDebugMode')==1, dbquit; end
+pascal('bicycle', 3);

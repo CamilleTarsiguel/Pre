@@ -1,0 +1,14 @@
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('textread', '/Applications/MATLAB_R2017a.app/toolbox/matlab/iofun/textread.m', 159)" style="font-weight:bold">textread</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017a.app/toolbox/matlab/iofun/textread.m',159,0)">line 159</a>)
+File not found.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pascal_data', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/data/pascal_data.m', 37)" style="font-weight:bold">pascal_data</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/data/pascal_data.m',37,0)">line 37</a>)
+  ids      = textread(sprintf(VOCopts.imgsetpath, dataset_fg), '%s');
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pascal_train', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/train/pascal_train.m', 41)" style="font-weight:bold">pascal_train</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/train/pascal_train.m',41,0)">line 41</a>)
+[pos, neg, impos] = pascal_data(cls, conf.pascal.year);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pascal', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/pascal.m', 62)" style="font-weight:bold">pascal</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/pascal.m',62,0)">line 62</a>)
+model = pascal_train(cls, n, note);
+} 
+opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/data/pascal_data.m',37,0)
+pascal('bicycle', 3);

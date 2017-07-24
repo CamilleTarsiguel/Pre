@@ -1,0 +1,712 @@
+bicycle: parsing positives (trainval 2011): 272/11540
+bicycle: parsing positives (trainval 2011): 600/11540
+bicycle: parsing positives (trainval 2011): 899/11540
+bicycle: parsing positives (trainval 2011): 1222/11540
+bicycle: parsing positives (trainval 2011): 1582/11540
+bicycle: parsing positives (trainval 2011): 1921/11540
+bicycle: parsing positives (trainval 2011): 2256/11540
+bicycle: parsing positives (trainval 2011): 2573/11540
+bicycle: parsing positives (trainval 2011): 2936/11540
+bicycle: parsing positives (trainval 2011): 3286/11540
+bicycle: parsing positives (trainval 2011): 3637/11540
+bicycle: parsing positives (trainval 2011): 3978/11540
+bicycle: parsing positives (trainval 2011): 4302/11540
+bicycle: parsing positives (trainval 2011): 4672/11540
+bicycle: parsing positives (trainval 2011): 5054/11540
+bicycle: parsing positives (trainval 2011): 5437/11540
+bicycle: parsing positives (trainval 2011): 5787/11540
+bicycle: parsing positives (trainval 2011): 6114/11540
+bicycle: parsing positives (trainval 2011): 6460/11540
+bicycle: parsing positives (trainval 2011): 6717/11540
+bicycle: parsing positives (trainval 2011): 7055/11540
+bicycle: parsing positives (trainval 2011): 7377/11540
+bicycle: parsing positives (trainval 2011): 7741/11540
+bicycle: parsing positives (trainval 2011): 8098/11540
+bicycle: parsing positives (trainval 2011): 8499/11540
+bicycle: parsing positives (trainval 2011): 8855/11540
+bicycle: parsing positives (trainval 2011): 9183/11540
+bicycle: parsing positives (trainval 2011): 9515/11540
+bicycle: parsing positives (trainval 2011): 9898/11540
+bicycle: parsing positives (trainval 2011): 10247/11540
+bicycle: parsing positives (trainval 2011): 10531/11540
+bicycle: parsing positives (trainval 2011): 10804/11540
+bicycle: parsing positives (trainval 2011): 11089/11540
+bicycle: parsing positives (trainval 2011): 11366/11540
+bicycle: parsing negatives (train 2011): 97/5717
+bicycle: parsing negatives (train 2011): 406/5717
+bicycle: parsing negatives (train 2011): 720/5717
+bicycle: parsing negatives (train 2011): 1027/5717
+bicycle: parsing negatives (train 2011): 1331/5717
+bicycle: parsing negatives (train 2011): 1643/5717
+bicycle: parsing negatives (train 2011): 1941/5717
+bicycle: parsing negatives (train 2011): 2255/5717
+bicycle: parsing negatives (train 2011): 2606/5717
+bicycle: parsing negatives (train 2011): 2958/5717
+bicycle: parsing negatives (train 2011): 3288/5717
+bicycle: parsing negatives (train 2011): 3619/5717
+bicycle: parsing negatives (train 2011): 3955/5717
+bicycle: parsing negatives (train 2011): 4241/5717
+bicycle: parsing negatives (train 2011): 4567/5717
+bicycle: parsing negatives (train 2011): 4893/5717
+bicycle: parsing negatives (train 2011): 5139/5717
+bicycle: parsing negatives (train 2011): 5372/5717
+bicycle: parsing negatives (train 2011): 5664/5717
+Starting parallel pool (parpool) using the 'local' profile ...
+connected to 2 workers.
+10 bicycle: warp: 316/474
+10 bicycle: warp: 315/474
+10 bicycle: warp: 158/474
+10 bicycle: warp: 157/474
+10 bicycle: warp: 314/474
+10 bicycle: warp: 313/474
+10 bicycle: warp: 312/474
+10 bicycle: warp: 311/474
+10 bicycle: warp: 310/474
+10 bicycle: warp: 309/474
+10 bicycle: warp: 308/474
+10 bicycle: warp: 307/474
+10 bicycle: warp: 306/474
+10 bicycle: warp: 305/474
+10 bicycle: warp: 304/474
+10 bicycle: warp: 303/474
+10 bicycle: warp: 302/474
+10 bicycle: warp: 301/474
+10 bicycle: warp: 300/474
+10 bicycle: warp: 299/474
+10 bicycle: warp: 298/474
+10 bicycle: warp: 297/474
+10 bicycle: warp: 296/474
+10 bicycle: warp: 295/474
+10 bicycle: warp: 294/474
+10 bicycle: warp: 293/474
+10 bicycle: warp: 292/474
+10 bicycle: warp: 291/474
+10 bicycle: warp: 290/474
+10 bicycle: warp: 289/474
+10 bicycle: warp: 288/474
+10 bicycle: warp: 287/474
+10 bicycle: warp: 286/474
+10 bicycle: warp: 285/474
+10 bicycle: warp: 284/474
+10 bicycle: warp: 283/474
+10 bicycle: warp: 282/474
+10 bicycle: warp: 281/474
+10 bicycle: warp: 280/474
+10 bicycle: warp: 279/474
+10 bicycle: warp: 278/474
+10 bicycle: warp: 277/474
+10 bicycle: warp: 276/474
+10 bicycle: warp: 275/474
+10 bicycle: warp: 274/474
+10 bicycle: warp: 273/474
+10 bicycle: warp: 272/474
+10 bicycle: warp: 271/474
+10 bicycle: warp: 270/474
+10 bicycle: warp: 269/474
+10 bicycle: warp: 268/474
+10 bicycle: warp: 267/474
+10 bicycle: warp: 266/474
+10 bicycle: warp: 265/474
+10 bicycle: warp: 264/474
+10 bicycle: warp: 263/474
+10 bicycle: warp: 262/474
+10 bicycle: warp: 261/474
+10 bicycle: warp: 156/474
+10 bicycle: warp: 155/474
+10 bicycle: warp: 154/474
+10 bicycle: warp: 153/474
+10 bicycle: warp: 152/474
+10 bicycle: warp: 151/474
+10 bicycle: warp: 150/474
+10 bicycle: warp: 149/474
+10 bicycle: warp: 148/474
+10 bicycle: warp: 147/474
+10 bicycle: warp: 146/474
+10 bicycle: warp: 145/474
+10 bicycle: warp: 144/474
+10 bicycle: warp: 143/474
+10 bicycle: warp: 142/474
+10 bicycle: warp: 141/474
+10 bicycle: warp: 140/474
+10 bicycle: warp: 139/474
+10 bicycle: warp: 138/474
+10 bicycle: warp: 137/474
+10 bicycle: warp: 136/474
+10 bicycle: warp: 135/474
+10 bicycle: warp: 134/474
+10 bicycle: warp: 133/474
+10 bicycle: warp: 132/474
+10 bicycle: warp: 131/474
+10 bicycle: warp: 130/474
+10 bicycle: warp: 129/474
+10 bicycle: warp: 128/474
+10 bicycle: warp: 127/474
+10 bicycle: warp: 126/474
+10 bicycle: warp: 125/474
+10 bicycle: warp: 124/474
+10 bicycle: warp: 123/474
+10 bicycle: warp: 122/474
+10 bicycle: warp: 121/474
+10 bicycle: warp: 120/474
+10 bicycle: warp: 119/474
+10 bicycle: warp: 118/474
+10 bicycle: warp: 117/474
+10 bicycle: warp: 116/474
+10 bicycle: warp: 115/474
+10 bicycle: warp: 114/474
+10 bicycle: warp: 113/474
+10 bicycle: warp: 112/474
+10 bicycle: warp: 111/474
+10 bicycle: warp: 110/474
+10 bicycle: warp: 109/474
+10 bicycle: warp: 108/474
+10 bicycle: warp: 107/474
+10 bicycle: warp: 106/474
+10 bicycle: warp: 105/474
+10 bicycle: warp: 104/474
+10 bicycle: warp: 103/474
+10 bicycle: warp: 102/474
+10 bicycle: warp: 101/474
+10 bicycle: warp: 100/474
+10 bicycle: warp: 99/474
+10 bicycle: warp: 98/474
+10 bicycle: warp: 97/474
+10 bicycle: warp: 96/474
+10 bicycle: warp: 95/474
+10 bicycle: warp: 94/474
+10 bicycle: warp: 93/474
+10 bicycle: warp: 92/474
+10 bicycle: warp: 91/474
+10 bicycle: warp: 260/474
+10 bicycle: warp: 259/474
+10 bicycle: warp: 258/474
+10 bicycle: warp: 257/474
+10 bicycle: warp: 256/474
+10 bicycle: warp: 255/474
+10 bicycle: warp: 254/474
+10 bicycle: warp: 253/474
+10 bicycle: warp: 252/474
+10 bicycle: warp: 251/474
+10 bicycle: warp: 250/474
+10 bicycle: warp: 249/474
+10 bicycle: warp: 248/474
+10 bicycle: warp: 247/474
+10 bicycle: warp: 246/474
+10 bicycle: warp: 245/474
+10 bicycle: warp: 244/474
+10 bicycle: warp: 243/474
+10 bicycle: warp: 242/474
+10 bicycle: warp: 241/474
+10 bicycle: warp: 240/474
+10 bicycle: warp: 239/474
+10 bicycle: warp: 238/474
+10 bicycle: warp: 237/474
+10 bicycle: warp: 236/474
+10 bicycle: warp: 235/474
+10 bicycle: warp: 234/474
+10 bicycle: warp: 233/474
+10 bicycle: warp: 232/474
+10 bicycle: warp: 231/474
+10 bicycle: warp: 230/474
+10 bicycle: warp: 229/474
+10 bicycle: warp: 228/474
+10 bicycle: warp: 227/474
+10 bicycle: warp: 226/474
+10 bicycle: warp: 225/474
+10 bicycle: warp: 224/474
+10 bicycle: warp: 223/474
+10 bicycle: warp: 222/474
+10 bicycle: warp: 221/474
+10 bicycle: warp: 220/474
+10 bicycle: warp: 219/474
+10 bicycle: warp: 218/474
+10 bicycle: warp: 217/474
+10 bicycle: warp: 216/474
+10 bicycle: warp: 215/474
+10 bicycle: warp: 214/474
+10 bicycle: warp: 213/474
+10 bicycle: warp: 212/474
+10 bicycle: warp: 211/474
+10 bicycle: warp: 210/474
+10 bicycle: warp: 209/474
+10 bicycle: warp: 208/474
+10 bicycle: warp: 207/474
+10 bicycle: warp: 206/474
+10 bicycle: warp: 205/474
+10 bicycle: warp: 90/474
+10 bicycle: warp: 89/474
+10 bicycle: warp: 88/474
+10 bicycle: warp: 87/474
+10 bicycle: warp: 86/474
+10 bicycle: warp: 85/474
+10 bicycle: warp: 84/474
+10 bicycle: warp: 83/474
+10 bicycle: warp: 82/474
+10 bicycle: warp: 81/474
+10 bicycle: warp: 80/474
+10 bicycle: warp: 79/474
+10 bicycle: warp: 78/474
+10 bicycle: warp: 77/474
+10 bicycle: warp: 76/474
+10 bicycle: warp: 75/474
+10 bicycle: warp: 74/474
+10 bicycle: warp: 73/474
+10 bicycle: warp: 72/474
+10 bicycle: warp: 71/474
+10 bicycle: warp: 70/474
+10 bicycle: warp: 69/474
+10 bicycle: warp: 68/474
+10 bicycle: warp: 67/474
+10 bicycle: warp: 66/474
+10 bicycle: warp: 65/474
+10 bicycle: warp: 64/474
+10 bicycle: warp: 63/474
+10 bicycle: warp: 62/474
+10 bicycle: warp: 61/474
+10 bicycle: warp: 60/474
+10 bicycle: warp: 59/474
+10 bicycle: warp: 58/474
+10 bicycle: warp: 57/474
+10 bicycle: warp: 56/474
+10 bicycle: warp: 55/474
+10 bicycle: warp: 54/474
+10 bicycle: warp: 53/474
+10 bicycle: warp: 52/474
+10 bicycle: warp: 51/474
+10 bicycle: warp: 50/474
+10 bicycle: warp: 49/474
+10 bicycle: warp: 48/474
+10 bicycle: warp: 47/474
+10 bicycle: warp: 46/474
+10 bicycle: warp: 45/474
+10 bicycle: warp: 44/474
+10 bicycle: warp: 43/474
+10 bicycle: warp: 42/474
+10 bicycle: warp: 41/474
+10 bicycle: warp: 40/474
+10 bicycle: warp: 39/474
+10 bicycle: warp: 38/474
+10 bicycle: warp: 37/474
+10 bicycle: warp: 36/474
+10 bicycle: warp: 35/474
+10 bicycle: warp: 34/474
+10 bicycle: warp: 33/474
+10 bicycle: warp: 32/474
+10 bicycle: warp: 31/474
+10 bicycle: warp: 30/474
+10 bicycle: warp: 29/474
+10 bicycle: warp: 28/474
+10 bicycle: warp: 27/474
+10 bicycle: warp: 26/474
+10 bicycle: warp: 25/474
+10 bicycle: warp: 24/474
+10 bicycle: warp: 23/474
+10 bicycle: warp: 22/474
+10 bicycle: warp: 21/474
+10 bicycle: warp: 20/474
+10 bicycle: warp: 19/474
+10 bicycle: warp: 18/474
+10 bicycle: warp: 17/474
+10 bicycle: warp: 16/474
+10 bicycle: warp: 15/474
+10 bicycle: warp: 14/474
+10 bicycle: warp: 13/474
+10 bicycle: warp: 12/474
+10 bicycle: warp: 11/474
+10 bicycle: warp: 10/474
+10 bicycle: warp: 9/474
+10 bicycle: warp: 8/474
+10 bicycle: warp: 7/474
+10 bicycle: warp: 6/474
+10 bicycle: warp: 5/474
+10 bicycle: warp: 4/474
+10 bicycle: warp: 3/474
+10 bicycle: warp: 2/474
+10 bicycle: warp: 1/474
+10 bicycle: warp: 204/474
+10 bicycle: warp: 203/474
+10 bicycle: warp: 202/474
+10 bicycle: warp: 201/474
+10 bicycle: warp: 200/474
+10 bicycle: warp: 199/474
+10 bicycle: warp: 198/474
+10 bicycle: warp: 197/474
+10 bicycle: warp: 196/474
+10 bicycle: warp: 195/474
+10 bicycle: warp: 194/474
+10 bicycle: warp: 193/474
+10 bicycle: warp: 192/474
+10 bicycle: warp: 191/474
+10 bicycle: warp: 190/474
+10 bicycle: warp: 189/474
+10 bicycle: warp: 188/474
+10 bicycle: warp: 187/474
+10 bicycle: warp: 186/474
+10 bicycle: warp: 185/474
+10 bicycle: warp: 184/474
+10 bicycle: warp: 183/474
+10 bicycle: warp: 182/474
+10 bicycle: warp: 181/474
+10 bicycle: warp: 180/474
+10 bicycle: warp: 179/474
+10 bicycle: warp: 178/474
+10 bicycle: warp: 177/474
+10 bicycle: warp: 176/474
+10 bicycle: warp: 175/474
+10 bicycle: warp: 174/474
+10 bicycle: warp: 173/474
+10 bicycle: warp: 172/474
+10 bicycle: warp: 171/474
+10 bicycle: warp: 170/474
+10 bicycle: warp: 169/474
+10 bicycle: warp: 168/474
+10 bicycle: warp: 167/474
+10 bicycle: warp: 166/474
+10 bicycle: warp: 165/474
+10 bicycle: warp: 164/474
+10 bicycle: warp: 163/474
+10 bicycle: warp: 162/474
+10 bicycle: warp: 161/474
+10 bicycle: warp: 160/474
+10 bicycle: warp: 159/474
+10 bicycle: warp: 435/474
+10 bicycle: warp: 434/474
+10 bicycle: warp: 433/474
+10 bicycle: warp: 432/474
+10 bicycle: warp: 431/474
+10 bicycle: warp: 430/474
+10 bicycle: warp: 429/474
+10 bicycle: warp: 428/474
+10 bicycle: warp: 427/474
+10 bicycle: warp: 426/474
+10 bicycle: warp: 425/474
+10 bicycle: warp: 424/474
+10 bicycle: warp: 423/474
+10 bicycle: warp: 422/474
+10 bicycle: warp: 421/474
+10 bicycle: warp: 420/474
+10 bicycle: warp: 419/474
+10 bicycle: warp: 418/474
+10 bicycle: warp: 417/474
+10 bicycle: warp: 416/474
+10 bicycle: warp: 415/474
+10 bicycle: warp: 414/474
+10 bicycle: warp: 413/474
+10 bicycle: warp: 412/474
+10 bicycle: warp: 411/474
+10 bicycle: warp: 410/474
+10 bicycle: warp: 409/474
+10 bicycle: warp: 408/474
+10 bicycle: warp: 407/474
+10 bicycle: warp: 406/474
+10 bicycle: warp: 405/474
+10 bicycle: warp: 404/474
+10 bicycle: warp: 403/474
+10 bicycle: warp: 402/474
+10 bicycle: warp: 401/474
+10 bicycle: warp: 400/474
+10 bicycle: warp: 399/474
+10 bicycle: warp: 398/474
+10 bicycle: warp: 397/474
+10 bicycle: warp: 396/474
+10 bicycle: warp: 395/474
+10 bicycle: warp: 394/474
+10 bicycle: warp: 393/474
+10 bicycle: warp: 392/474
+10 bicycle: warp: 391/474
+10 bicycle: warp: 390/474
+10 bicycle: warp: 389/474
+10 bicycle: warp: 388/474
+10 bicycle: warp: 387/474
+10 bicycle: warp: 386/474
+10 bicycle: warp: 385/474
+10 bicycle: warp: 384/474
+10 bicycle: warp: 383/474
+10 bicycle: warp: 382/474
+10 bicycle: warp: 381/474
+10 bicycle: warp: 380/474
+10 bicycle: warp: 379/474
+10 bicycle: warp: 378/474
+10 bicycle: warp: 377/474
+10 bicycle: warp: 376/474
+10 bicycle: warp: 375/474
+10 bicycle: warp: 374/474
+10 bicycle: warp: 373/474
+10 bicycle: warp: 372/474
+10 bicycle: warp: 371/474
+10 bicycle: warp: 370/474
+10 bicycle: warp: 369/474
+10 bicycle: warp: 368/474
+10 bicycle: warp: 367/474
+10 bicycle: warp: 366/474
+10 bicycle: warp: 365/474
+10 bicycle: warp: 364/474
+10 bicycle: warp: 363/474
+10 bicycle: warp: 362/474
+10 bicycle: warp: 361/474
+10 bicycle: warp: 360/474
+10 bicycle: warp: 359/474
+10 bicycle: warp: 358/474
+10 bicycle: warp: 357/474
+10 bicycle: warp: 356/474
+10 bicycle: warp: 355/474
+10 bicycle: warp: 354/474
+10 bicycle: warp: 353/474
+10 bicycle: warp: 352/474
+10 bicycle: warp: 351/474
+10 bicycle: warp: 350/474
+10 bicycle: warp: 349/474
+10 bicycle: warp: 348/474
+10 bicycle: warp: 347/474
+10 bicycle: warp: 346/474
+10 bicycle: warp: 345/474
+10 bicycle: warp: 344/474
+10 bicycle: warp: 459/474
+10 bicycle: warp: 458/474
+10 bicycle: warp: 457/474
+10 bicycle: warp: 456/474
+10 bicycle: warp: 455/474
+10 bicycle: warp: 454/474
+10 bicycle: warp: 453/474
+10 bicycle: warp: 452/474
+10 bicycle: warp: 451/474
+10 bicycle: warp: 450/474
+10 bicycle: warp: 449/474
+10 bicycle: warp: 448/474
+10 bicycle: warp: 447/474
+10 bicycle: warp: 446/474
+10 bicycle: warp: 445/474
+10 bicycle: warp: 444/474
+10 bicycle: warp: 443/474
+10 bicycle: warp: 442/474
+10 bicycle: warp: 441/474
+10 bicycle: warp: 440/474
+10 bicycle: warp: 439/474
+10 bicycle: warp: 438/474
+10 bicycle: warp: 437/474
+10 bicycle: warp: 436/474
+10 bicycle: warp: 343/474
+10 bicycle: warp: 342/474
+10 bicycle: warp: 341/474
+10 bicycle: warp: 340/474
+10 bicycle: warp: 339/474
+10 bicycle: warp: 338/474
+10 bicycle: warp: 337/474
+10 bicycle: warp: 336/474
+10 bicycle: warp: 335/474
+10 bicycle: warp: 334/474
+10 bicycle: warp: 333/474
+10 bicycle: warp: 332/474
+10 bicycle: warp: 331/474
+10 bicycle: warp: 330/474
+10 bicycle: warp: 329/474
+10 bicycle: warp: 328/474
+10 bicycle: warp: 327/474
+10 bicycle: warp: 326/474
+10 bicycle: warp: 325/474
+10 bicycle: warp: 324/474
+10 bicycle: warp: 323/474
+10 bicycle: warp: 322/474
+10 bicycle: warp: 321/474
+10 bicycle: warp: 320/474
+10 bicycle: warp: 319/474
+10 bicycle: warp: 318/474
+10 bicycle: warp: 317/474
+10 bicycle: warp: 474/474
+10 bicycle: warp: 473/474
+10 bicycle: warp: 472/474
+10 bicycle: warp: 471/474
+10 bicycle: warp: 470/474
+10 bicycle: warp: 469/474
+10 bicycle: warp: 468/474
+10 bicycle: warp: 467/474
+10 bicycle: warp: 466/474
+10 bicycle: warp: 465/474
+10 bicycle: warp: 464/474
+10 bicycle: warp: 463/474
+10 bicycle: warp: 462/474
+10 bicycle: warp: 461/474
+10 bicycle: warp: 460/474
+Caching features
+10 bicycle: lrsplit features: 1/474
+cluster objective: 12268.540
+cluster iter: 4/25
+cluster iter: 9/25
+cluster iter: 12/25
+cluster iter: 15/25
+cluster iter: 20/25
+cluster iter: 25/25
+{Undefined function or variable 'fv_cache'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('train', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/train/train.m', 76)" style="font-weight:bold">train</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/train/train.m',76,0)">line 76</a>)
+  fv_cache('init', max_num, max_dim, max_nbls);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pascal_train', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/train/pascal_train.m', 71)" style="font-weight:bold">pascal_train</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/train/pascal_train.m',71,0)">line 71</a>)
+    models{i} = train(models{i}, spos{i}(inds), neg_large, true, true, 1, 1, ...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pascal', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/pascal.m', 62)" style="font-weight:bold">pascal</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/pascal.m',62,0)">line 62</a>)
+model = pascal_train(cls, n, note);
+} 
+cd fv_cache
+mex fv_cache.cc
+Building with 'Xcode Clang++'.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mex')" style="font-weight:bold">mex</a>
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:17:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+} 
+mex fv_cache.cc
+Building with 'Xcode Clang++'.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mex')" style="font-weight:bold">mex</a>
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:379:3: error: use of undeclared identifier 'omp_set_num_threads'
+  omp_set_num_threads(num_threads);
+  ^
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:417:21: error: non-constant-expression cannot be narrowed from type 'int' to
+'mwSize' (aka 'unsigned long') in initializer list [-Wc++11-narrowing]
+  mwSize dims[] = { dim };
+                    ^~~
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:417:21: note: insert an explicit cast to silence this issue
+  mwSize dims[] = { dim };
+                    ^~~
+                    static_cast<mwSize>( )
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:510:21: error: non-constant-expression cannot be narrowed from type 'int' to
+'mwSize' (aka 'unsigned long') in initializer list [-Wc++11-narrowing]
+  mwSize dims[] = { M.num_blocks };
+                    ^~~~~~~~~~~~
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:510:21: note: insert an explicit cast to silence this issue
+  mwSize dims[] = { M.num_blocks };
+                    ^~~~~~~~~~~~
+                    static_cast<mwSize>( )
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:515:23: error: non-constant-expression cannot be narrowed from type 'int' to
+'mwSize' (aka 'unsigned long') in initializer list [-Wc++11-narrowing]
+    mwSize dims[] = { M.block_sizes[i] };
+                      ^~~~~~~~~~~~~~~~
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:515:23: note: insert an explicit cast to silence this issue
+    mwSize dims[] = { M.block_sizes[i] };
+                      ^~~~~~~~~~~~~~~~
+                      static_cast<mwSize>( )
+4 errors generated.
+} 
+mex fv_cache.cc
+Building with 'Xcode Clang++'.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mex')" style="font-weight:bold">mex</a>
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:379:3: error: use of undeclared identifier 'omp_set_num_threads'
+  omp_set_num_threads(num_threads);
+  ^
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:510:21: error: non-constant-expression cannot be narrowed from type 'int' to
+'mwSize' (aka 'unsigned long') in initializer list [-Wc++11-narrowing]
+  mwSize dims[] = { M.num_blocks };
+                    ^~~~~~~~~~~~
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:510:21: note: insert an explicit cast to silence this issue
+  mwSize dims[] = { M.num_blocks };
+                    ^~~~~~~~~~~~
+                    static_cast<mwSize>( )
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:515:23: error: non-constant-expression cannot be narrowed from type 'int' to
+'mwSize' (aka 'unsigned long') in initializer list [-Wc++11-narrowing]
+    mwSize dims[] = { M.block_sizes[i] };
+                      ^~~~~~~~~~~~~~~~
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:515:23: note: insert an explicit cast to silence this issue
+    mwSize dims[] = { M.block_sizes[i] };
+                      ^~~~~~~~~~~~~~~~
+                      static_cast<mwSize>( )
+3 errors generated.
+} 
+mex fv_cache.cc
+Building with 'Xcode Clang++'.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mex')" style="font-weight:bold">mex</a>
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:379:3: error: use of undeclared identifier 'omp_set_num_threads'
+  omp_set_num_threads(num_threads);
+  ^
+1 error generated.
+} 
+fv_compile(true, false);
+[Warning: Maybe you need to call fv_cache('unlock') first?] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fv_compile', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m', 62)" style="font-weight:bold">fv_compile</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m',62,0)">line 62</a>)] 
+fv_cache('unlock')
+{Undefined function or variable 'fv_cache'.
+} 
+fv_cache('unlock')
+{Undefined function or variable 'fv_cache'.
+} 
+fv_compile(true, false);
+{Undefined function or variable 'fv_cache'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fv_compile', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m', 24)" style="font-weight:bold">fv_compile</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m',24,0)">line 24</a>)
+   fv_cache('unlock');
+} 
+fv_cache(''unlock'') 
+ fv_cache(''unlock'') 
+            
+{Error: Unexpected MATLAB expression.
+} 
+fv_cache('unlock')
+{Undefined function or variable 'fv_cache'.
+} 
+fv_cache("unlock")
+{Undefined function or variable 'fv_cache'.
+} 
+fv_compile
+[Warning: Maybe you need to call fv_cache('unlock') first?] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fv_compile', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m', 62)" style="font-weight:bold">fv_compile</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m',62,0)">line 62</a>)] 
+opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m',62,0)
+fv_cache
+{Undefined function or variable 'fv_cache'.
+} 
+fv_compile
+{Error: <a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m',2,1)">File: fv_compile.m Line: 2 Column: 1
+</a>The input character is not valid in MATLAB statements or expressions.
+} 
+opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m',2,1)
+cd ..
+cd gdetect/
+mex bouded_dt.cc
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mex')" style="font-weight:bold">mex</a>
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/gdetect/bouded_dt.cc not found; check that you are in the correct current folder, and check the
+spelling of '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/gdetect/bouded_dt.cc'.
+} 
+mex bounded_dt.cc
+Building with 'Xcode Clang++'.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mex')" style="font-weight:bold">mex</a>
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/gdetect/bounded_dt.cc:16:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+} 
+fv_compile
+[Warning: Maybe you need to call fv_cache('unlock') first?] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fv_compile', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m', 61)" style="font-weight:bold">fv_compile</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m',61,0)">line 61</a>)] 
+fv_compile
+[Warning: Maybe you need to call fv_cache('unlock') first?] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fv_compile', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m', 61)" style="font-weight:bold">fv_compile</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m',61,0)">line 61</a>)] 
+fv_compile
+[Warning: Maybe you need to call fv_cache('unlock') first?] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fv_compile', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m', 61)" style="font-weight:bold">fv_compile</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m',61,0)">line 61</a>)] 
+fv_compile
+[Warning: Maybe you need to call fv_cache('unlock') first?] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fv_compile', '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m', 61)" style="font-weight:bold">fv_compile</a> (<a href="matlab: opentoline('/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_compile.m',61,0)">line 61</a>)] 
+mex fv_cache.cc
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mex')" style="font-weight:bold">mex</a>
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/gdetect/fv_cache.cc not found; check that you are in the correct current folder, and check the
+spelling of '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/gdetect/fv_cache.cc'.
+} 
+mex fv_cache.cc
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mex')" style="font-weight:bold">mex</a>
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache.cc not found; check that you are in the correct current folder, and check the spelling
+of '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache.cc'.
+} 
+
+mex fv_cache.cc
+Building with 'Xcode Clang++'.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mex')" style="font-weight:bold">mex</a>
+/Users/CamilleT/Documents/MATLAB/Pre/Source_code/10/fv_cache/fv_cache.cc:17:10: fatal error: 'omp' file not found
+#include <omp>
+         ^
+1 error generated.
+} 
+mex -fopenmp fv_cache.cc
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mex')" style="font-weight:bold">mex</a>
+Unknown MEX argument '-fopenmp'.
+} 
+IdleTimeout has been reached.
+Parallel pool using the 'local' profile is shutting down.
