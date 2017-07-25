@@ -21,8 +21,9 @@ opt.root = pwd;
 %     end
 % end
 
-addpath(fullfile('~/Documents/MATLAB/Pre/Source_code/MDP', '2DMOT15', 'devkit', 'utils'));
+addpath(fullfile(opt.root, '2DMOT15', 'devkit', 'utils'));
 addpath([opt.root '/3rd_party/libsvm-3.20/matlab']);
+addpath([opt.root '/3rd_party/libsvm-3.20']);
 addpath([opt.root '/3rd_party/Hungarian']);
 
 
