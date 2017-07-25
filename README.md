@@ -22,7 +22,7 @@ This code was tested on Mac OSX 10.12.5 and Matlab R2017a.
 INSTALLATION : 
 ==============
 
-Nothing is needed if working on Mac.
+Nothing is needed if working on Mac. ( If you want to recompile the mex files, you will need Xcode)
 For other types of computer, see individual codes
 
 FOLDER STRUCTURE : 
@@ -76,3 +76,26 @@ RUNNING :
 
 To run the code, you only need to open main.m and set the parameters  \
 To evaluate (other than running time) open main_eval.m and set the parameters accordingly
+
+
+
+HOW TO COMLETE THE CODE :
+=======================
+IN MAIN.M
+
+Adding a new video :
+--------------------
+
+Set the variable in the section "Choose your dataset"
+Set the filename and the videoname (name of the file) in the section "Loading the video"
+
+Adding a new detector :
+-----------------------
+
+Adding a new tracker :
+----------------------
+
+Set the variable in the section "Choose your tracker"
+Set the path, the function and the printing of the tracks in a text file in the section "Tracking" at the end of the main.m
+
+--> You should also copy paste that in the main_eval.m in case you want to run your detector/tracker directly from this file.
