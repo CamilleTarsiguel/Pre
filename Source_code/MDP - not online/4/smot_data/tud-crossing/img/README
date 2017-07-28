@@ -1,0 +1,19 @@
+TUD "Crossing" Sequence
+
+This dataset was used to demonstrate tracking by detection results in
+the paper:
+
+M. Andriluka, S. Roth, B. Schiele. People-Tracking-by-Detection and
+People-Detection-by-Tracking. IEEE Conference on Computer Vision and
+Pattern Recognition (CVPR'08), Anchorage, USA, June 2008.
+
+The dataset contains 201 images with 1008 annotated pedestrians. Most
+of the pedestians are in side-view and many are partially occluded for the
+whole sequence.
+
+Annotation is provided in the file tud-crossing-sequence.idl. Each line
+in the file contains name of the image followed by the list of
+annotation rectangles in the [xmin, ymin, xmax, ymax] format.  All
+pedestrians visible to at least 50% were annotated.
+
+

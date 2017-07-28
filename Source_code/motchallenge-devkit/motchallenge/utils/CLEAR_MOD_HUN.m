@@ -229,7 +229,7 @@ for t=1:F
         falsepositives=setdiff(alldetections,mappedDets);
     end
     t
-    alltracked(t,:)=M(t,1:4);
+    alltracked(t,:)=M(t,:);
 %     allfalsepos(t,1:length(falsepositives))=falsepositives;
     allfalsepos(t,falsepositives)=falsepositives;
     

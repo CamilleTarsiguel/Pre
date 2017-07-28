@@ -15,11 +15,11 @@ function testing(no_compile)
 
 startup;
 
-if ~exist('no_compile', 'var')
-  fprintf('compiling the code...');
-  compile;
-  fprintf('done.\n\n');
-end
+% if ~exist('no_compile', 'var')
+%   fprintf('compiling the code...');
+%   compile;
+%   fprintf('done.\n\n');
+% end
 
 load('PROJECT/2010/person_final');
 %load('PROJECT/INRIA/inriaperson_final');

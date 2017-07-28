@@ -5,8 +5,8 @@ root = cd;
 
 %% Detection or Tracking ?
 
-det = false;
-trk = true;
+det = true;
+trk = false;
 
 
 
@@ -27,11 +27,11 @@ var_SMSQ20 = true;
 
 var_SMSQ24 = false;
 
-var_SMSQ16 = true;
+var_SMSQ16 = false;
 
 var_SMSQ14 = false;
 
-var_SMSQ17 = true;
+var_SMSQ17 = false;
 
 
 
@@ -64,13 +64,13 @@ var_MDP = false; % MDP tracking
 
 var_DC = false; % Discrete continuous tracking
 
-var_ROT = false; % Robust online tracking
+var_ROT = true; % Robust online tracking
 
 var_MOT = false; % Baseline with blob analysis
 
 var_MOTv2 = false; % MOT with detectors
 
-var_KLT = true; % Online tracker based on KLT
+var_KLT = false; % Online tracker based on KLT
 
 
 
@@ -180,7 +180,7 @@ if trk
             lab = cell2mat(all_mot.lab(i));
             conf = cell2mat(all_mot.conf(i));
             nbIds = length(cpos);
-            
+            if ~sempty(conf)
             fr(size1end:size1end + nbIds - 1, 1) =  i * ones( nbIds, 1);
             fr(size1end:size1end + nbIds - 1, 2) = lab';
             fr(size1end:size1end + nbIds - 1, 3) = cpos(1,:)';
@@ -190,7 +190,7 @@ if trk
             fr(size1end:size1end + nbIds - 1, 7) = conf';
             
             size1end = size1end + nbIds;
-            
+            end
         end
         csvwrite(strcat('results/',videoname, '.txt'), fr);
         
@@ -245,6 +245,7 @@ if det
     gtFile = fullfile(root, 'groundTruth',strcat(videoname, '.txt'));
     
     cd(fullfile(root,'Source_code/motchallenge-devkit/motchallenge/'))
+    addpath(fullfile(root,'Source_code/motchallenge-devkit/motchallenge/', 'utils'));
     [metrics, metricsInfo, additionalInfo] = evaluationD(gtFile, detFile)
 end
 if trk

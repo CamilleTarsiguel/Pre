@@ -13,6 +13,8 @@ fprintf('You choose the video %s \n', filename);
 global Filename;
 Filename = filename;
 mot_setting_params;
+
+% Setting the detector
 switch detector
     case 'ACF'
     var_peopleDetectorACF = true;
@@ -53,24 +55,7 @@ minW = 2;
 reader = VideoReader(video_path);
 frame_end = reader.NumberOfFrames;
 reader = VideoReader(video_path);
-% disp('Loading detections...');
-% data_path = 'Det/';
-% %seq_name = 'ETH_Bahnhof_Demo_Det.mat';
-% %data_path = '~/Documents/MATLAB/Pre/data/MOT16/test/MOT16-06/det/';
-% seq_name = 'det.mat';
-%
-% file_name = strcat(data_path,seq_name);
-% load(file_name);
-% M = csvread('~/Documents/MATLAB/Pre/detections-ACF.txt');
-% % Changing structure of detections (M = variable in MOT format, detections = variable in Robust online tracking format )
-% fprintf('changing struture \n');
-% for fr = 1:M(end,1) % last frame
-%     ind = M(:,1) == fr;
-%     detections(fr).x = M(ind,3);
-%     detections(fr).y = M(ind,4);
-%     detections(fr).w = M(ind,5);
-%     detections(fr).h = M(ind,6);
-% end
+
 
 fprintf('Finished changing struture \n');
 
@@ -125,15 +110,11 @@ for i=1:init_frame
     Obs_grap(i).child = [];
     Obs_grap(i).iso_child =[];
     init_img_set{i} = frame;
-%     figure;
-%     img = insertObjectAnnotation(frame, 'rectangle', bboxes, score);
-%     imshow(img);
-%     pause;
+
 end
 
 [Obs_grap] = mot_pre_association(detections,Obs_grap,frame_start,init_frame);
-% st_fr = 1;
-% en_fr = init_frame;
+
 
 
 [Trk,param,Obs_grap] = MOT_Initialization_Tracklets(init_img_set,Trk,detections,param,...
@@ -146,7 +127,8 @@ for fr = init_frame+1:frame_end
         param.new_thr = 5;
     end
     rgbimg = readFrame(reader);
-    %     [bboxes, score ] = detect(detector, frame);
+    
+    % Detection
     if var_peopleDetectorACF
         [bboxes, score ] = detect(Detector, rgbimg);
     end
@@ -205,7 +187,7 @@ TotalTime = toc(tstart1);
 AverageTime = TotalTime/(frame_start + frame_end);
 
 %% Draw Tracking Results
-out_path = 'Results/ETH_Bahnhof/';
+out_path = 'Results/SMSQ17/';
 
 DrawOption.isdraw = display;
 DrawOption.iswrite = 1;
@@ -217,29 +199,7 @@ DrawOption.new_thr = param.new_thr;
 close all;
 disp([sprintf('Average running time:%.3f(sec/frame)', AverageTime)]);
 
-%% Save tracking results
-out_path = 'Results/';
-out_filename = strcat(out_path, 'cmot_tracking_results.mat');
-save(out_filename, 'all_mot');
 
-%  function [score, bboxes] = detectObjects(frame)
-% 
-%         
-%             [bboxes, score ] = detect(Detector, frame);
-%        
-%         index = [bboxes(:,3)<maxW];
-%         bboxes = bboxes(index, :);
-%         score = score(index, 1);
-%         index = [bboxes(:,3)>minW];
-%         bboxes = bboxes(index, :);
-%         score = score(index, 1);
-%         index = [bboxes(:,4)<maxH];
-%         bboxes = bboxes(index, :);
-%         score = score(index, 1);
-%         index = [bboxes(:,4)>minH];
-%         bboxes = bboxes(index, :);
-%         score = score(index, 1);
-%     end
 end
 
 

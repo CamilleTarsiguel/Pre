@@ -7,9 +7,9 @@ function [metrics, metricsInfo, additionalInfo] = evaluationD(gtFile, detFile)
 % gtFile is the text file containing the ground truth for the sequence
 % detFile is the text file containing the results of the detection
 
-gtFile = '/Users/CamilleT/Documents/MATLAB/Pre/groundTruth/SMSQ17short.txt';
-detFile = '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/ACF/results/SMSQ17.txt';
-
+%gtFile = '/Users/CamilleT/Documents/Pre/groundTruth/SMSQ17short.txt';
+%detFile = '/Users/CamilleT/Documents/MATLAB/Pre/Source_code/ACF/results/SMSQ17.txt';
+%detFile = '/Users/CamilleT/Documents/Pre/smsq17short.txt'
 % OUTPUT
 % metrics contains the following
 % [1]   recall	- recall = percentage of detected targets

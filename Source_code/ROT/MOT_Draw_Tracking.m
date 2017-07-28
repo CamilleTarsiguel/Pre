@@ -18,7 +18,7 @@ for q=1:length(Trk_sets) % for each frames
     
     rgbimg = readFrame(reader);
     
-    wind_cx=[];  wind_cy =[]; windw = []; windh = [];
+    wind_lx=[];  wind_ly =[]; windw = []; windh = [];
     Labels =[]; trk_idx = [];  trk_sts =[]; conf = [];
     
     
@@ -29,8 +29,8 @@ for q=1:length(Trk_sets) % for each frames
             lab = Trk_sets(new_thr+1).label;
             trk_sts = zeros(1,length(trk_idx));
             if sum(states(:,q)) ~=0
-                wind_cx = [wind_cx, states(1,q)];
-                wind_cy = [wind_cy, states(2,q)];
+                wind_lx = [wind_lx, states(1,q)];
+                wind_ly = [wind_ly, states(2,q)];
                 windw = [windw,states(3,q)];
                 windh = [windh,states(4,q)];
                 Labels = [Labels,lab(trk_idx(i))];
@@ -44,8 +44,8 @@ for q=1:length(Trk_sets) % for each frames
         
         for i=1:length(trk_idx)
             states = Trk_sets(q).states{trk_idx(i)};
-            wind_cx = [wind_cx, states(1,end)];
-            wind_cy = [wind_cy, states(2,end)];
+            wind_lx = [wind_lx, states(1,end)];
+            wind_ly = [wind_ly, states(2,end)];
             windw = [windw,states(3,end)];
             windh = [windh,states(4,end)];
             conf(i) = Trk_sets(q).conf(trk_idx(i));
@@ -56,7 +56,7 @@ for q=1:length(Trk_sets) % for each frames
         end
     end
     
-    [wind_lx wind_ly] = CenterToLeft(wind_cx,wind_cy,windh,windw);
+    [wind_cx wind_cy] = CenterToLeft(wind_lx,wind_ly,windh,windw);
     
     
     %% Draw results

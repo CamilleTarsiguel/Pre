@@ -1,0 +1,18 @@
+TUD "Campus" Sequence
+
+This dataset was used to compare pedestrian detectors in the paper:
+
+M. Andriluka, S. Roth, B. Schiele. People-Tracking-by-Detection and
+People-Detection-by-Tracking. IEEE Conference on Computer Vision and
+Pattern Recognition (CVPR'08), Anchorage, USA, June 2008.
+
+The dataset contains 71 image with 303 annotated pedestrians. All
+pedestrians are in side-view and many are partially occluding each
+other.
+
+Annotation is provided in the file tud-campus-sequence.idl. Each line
+in the file contains name of the image followed by the list of
+annotation rectangles in the [xmin, ymin, xmax, ymax] format.  All
+pedestrians visible to at least 50% were annotated.
+
+

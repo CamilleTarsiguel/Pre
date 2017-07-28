@@ -12,19 +12,11 @@ var_PeopleDetector = false;
 % and displaying the results.
 obj = setupSystemObjects();
 
-% tracks = initializeTracks(); % Create an empty array of tracks.
-% memory = initializeMemory();
-% memory2 = initializeMemory(); % To keep the memory of terminated tracks
-% nextId = 1; % ID of the next track
+
 
 % Go to the first frame where there is a detection
 numframe = 1; 
 frame = readFrame();
-% for i=1:116
-%     frame = readFrame();
-%     numframe = numframe + 1;
-%     fprintf("Waiting for detection, fr no %d\n", numframe);
-% end
 
 bboxes = detectObjects(frame);
 while isempty(bboxes)
@@ -43,14 +35,6 @@ while ~isDone(obj.reader)
     else
         obj.tracker.track(rgb2gray(frame), numframe);
     end
-%     predictNewLocationsOfTracks();
-%     [assignments, unassignedTracks, unassignedDetections] = ...
-%         detectionToTrackAssignment();
-%     
-%     updateAssignedTracks();
-%     updateUnassignedTracks();
-%     deleteLostTracks();
-%     createNewTracks();
     if display
         displayTrackingResults();
     end
@@ -61,6 +45,8 @@ end
  % keep in memory all the tracks
     
 memory = obj.tracker.Memory;
+
+
 %% Create System Objects
 % Create System objects used for reading the video frames, detecting
 % foreground objects, and displaying results.

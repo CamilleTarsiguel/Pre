@@ -5,25 +5,14 @@ root = cd;
 det = false;
 trk = true;
 
+
+%% Display mode
+
+display = true;
+
 %% Choose dataset
 
-var_MOT16 = false;
-
-var_atrium = false;
-
-var_Smsq1 = false;
-
-var_Smsq2 = false;
-
-var_SMSQ13 = false;
-
 var_SMSQ20 = false;
-
-var_SMSQ24 = false;
-
-var_SMSQ16 = false;
-
-var_SMSQ14 = false;
 
 var_SMSQ17 = true;
 
@@ -74,41 +63,16 @@ var_KLT = true; % Online tracker based on KLT
 
 %% Loading video
 
-if var_MOT16 % video in Shanghai
-    filename = fullfile(root,'data/MOT16-04.mp4');
-    videoname = 'MOT16-04';
-end
-if var_Smsq1 % Video far away
-    filename = fullfile(root,'/data/SmSq1.m4v');
-    videoname = 'SmSq1';
-end
-if var_SMSQ13 % Video from the Kitta
-    filename = fullfile(root,'data/SMSQ13.MOV');
-    videoname = 'SMSQ13';
-end
+
 if var_SMSQ20 % Video from the Kitta (group of people)
     filename = fullfile(root,'data/SMSQ20short50.avi');
     videoname = 'SMSQ20short';
-end
-if var_SMSQ24 % Video from the Kitta (group of people)
-    filename = fullfile(root,'data/SMSQ24.MOV');
-    videoname = 'SMSQ24';
-end
-if var_SMSQ16 % Video from the Kitta (group of people)
-    filename = fullfile(root,'data/SMSQ16.MOV');
-    videoname = 'SMSQ16';
-end
-if var_SMSQ14 % Video from the Kitta (group of people)
-    filename = fullfile(root,'data/SMSQ14.MOV');
-    videoname = 'SMSQ14';
 end
 if var_SMSQ17 % Video from the Kitta (group of people)
     filename = fullfile(root,'data/SMSQ17short.avi');
     videoname = 'SMSQ17short';
 end
-%% Display mode
 
-display = true;
 starting = tic;
 %% Detection (offline)
 if (var_DC||det) % For now the detectors are still not turned into online trackers
@@ -160,22 +124,22 @@ if trk
         size1end = 1;
         for i = 1 : numframes
             
-            cpos = cell2mat(all_mot.cpos(i));
+            lpos = cell2mat(all_mot.cpos(i));
             size = cell2mat(all_mot.size(i));
             lab = cell2mat(all_mot.lab(i));
             conf = cell2mat(all_mot.conf(i));
-            nbIds = length(cpos);
-            
+            nbIds = length(lpos);
+            if ~isempty(conf)
             fr(size1end:size1end + nbIds - 1, 1) =  i * ones( nbIds, 1);
             fr(size1end:size1end + nbIds - 1, 2) = lab';
-            fr(size1end:size1end + nbIds - 1, 3) = cpos(1,:)';
-            fr(size1end:size1end + nbIds - 1, 4) = cpos(2,:)';
+            fr(size1end:size1end + nbIds - 1, 3) = lpos(1,:)';
+            fr(size1end:size1end + nbIds - 1, 4) = lpos(2,:)';
             fr(size1end:size1end + nbIds - 1, 5) = size(1,:)';
             fr(size1end:size1end + nbIds - 1, 6) = size(2,:)';
             fr(size1end:size1end + nbIds - 1, 7) = conf';
             
             size1end = size1end + nbIds;
-            
+            end
         end
         csvwrite(strcat('results/',videoname, '.txt'), fr);
         
