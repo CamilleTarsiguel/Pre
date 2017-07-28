@@ -15,8 +15,8 @@ Citation : I used and modified the code from the following articles
 - ROT Tracking : Robust Online Multi-Object Tracking based on Tracklet Confidence and Online Discriminative Appearance Learning,
 Seung-Hwan Bae and Kuk-Jin Yoon, IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Columbus, June, 2014. https://cvl.gist.ac.kr/project/cmot.html
 - Evaluation : MOT challenge devkit https://motchallenge.net
-- ACF detector and Caltech Pedestrian Dataset + Toolbox : P. Dollar
-- DPM detector :
+- ACF detector and Caltech Pedestrian Dataset + Toolbox : https://pdollar.github.io/toolbox/
+- DPM detector : http://people.cs.uchicago.edu/~rbg/latent-release5/
 
 This code was tested on Mac OSX 10.12.5 and Matlab R2017a.
 
@@ -92,6 +92,10 @@ Set the filename and the videoname (name of the file) in the section "Loading th
 
 Adding a new detector :
 -----------------------
+Set the variable in the section "Choose your detector"
+go to the detect_people.m file and add you detector in the switch loop. Then add the detection formula in the function detectObjects (same file)
+For each tracker, add the detector variable and add the detection formula in the function detectObjects
+
 
 Adding a new tracker :
 ----------------------
